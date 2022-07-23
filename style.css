@@ -1,0 +1,572 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE COLORS & FONTS
+  ========================================
+*/
+
+html{
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6, span, a, li, button, nav, a, li, p, span{
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-stretch: 100%;
+  font-weight: 400;
+  line-height: 2em;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+button, nav, a, li, p, span{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 10rem;
+  line-height: 15rem;
+  color: white;
+}
+
+h2{
+  font-size: 4.5rem;
+  line-height: 7rem;
+  font-weight: 400;
+}
+
+h5{
+  font-size: 1.8rem;
+}
+
+.title h5{
+  color: white;
+}
+
+h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.callToAction span{
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+}
+
+.callToAction .coupon{
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+p, span{
+  text-transform: none;
+}
+
+ion-icon{
+  color: black;
+  font-size: 25px;
+}
+
+.whiteColor{
+  color: white;
+}
+
+.iconBlack{
+  color: white;
+  border-radius: 50%;
+  background: black;
+  padding: 10px;
+}
+
+.iconWhite{
+  background: white;
+}
+
+.black{
+  color: white;
+}
+
+.white .whiteColor{
+  color: black;
+}
+
+/*
+  ========================================
+  BACKGROUNDS
+  ========================================
+*/
+.title{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/aeaeaeaeaeae.jpg")  no-repeat center;
+  background-size: cover;
+}
+
+.couponBig{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Promo-Banner-Image.jpg?id=4553") no-repeat center;
+  background-size: cover;
+}
+
+.video{
+  background: #f3f4f6;
+}
+
+.black{
+  background: black;
+}
+
+header, main{
+  background: white;
+}
+
+.imgOne{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-01.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imgTwo{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-02.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imgThree{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-01.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imgFour{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-04.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imgFive{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-02.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imgSix{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-03.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.stylistOne{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Styler-01.jpg") no-repeat center;
+  background-size: cover;
+}
+.stylistTwo{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Styler-02.jpg") no-repeat center;
+  background-size: cover;
+}
+.stylistThree{
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Styler-03.jpg") no-repeat center;
+  backgrond-size: cover;
+}
+
+.imgSquare, .imgRectangle{
+  width:360px;
+  height:360px;
+  border: 5px solid white;
+}
+.imgRectangle{
+  height: 760px;
+}
+
+
+/*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+header, .timeSide, .title, .services, .video, .stylistSection, .couponBig, .lookbook, footer{
+  padding: 5% 15%;
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+}
+
+header, footer{
+  padding: 2.5% 5%;
+  width: 100%;
+}
+
+.title{
+  padding: 10% 15%;
+}
+
+span{
+  display: block;
+}
+
+.callToAction{
+  width: 300px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+button{
+  margin: 30px 0;
+  padding:10px 20px;
+  border: none;
+}
+
+button ion-icon, .book ion-icon, .threeLines{
+  position: relative;
+  display: inline-block;
+  bottom: -8px;
+}
+
+.video .textMain{
+  float: left;
+  width: 50%;
+  padding: 2% 3% 2% 0;
+}
+
+.video p, .videoImgWrapper{
+  padding: 5% 0;
+}
+
+.couponBig{
+  width: 80%;
+  margin: 0 auto;
+  padding:  5%;
+}
+
+.couponBig .contentWrapper{
+  width: 50%;
+  text-align: left;
+}
+
+.video, .lookbook, .services{
+  contain: content;
+}
+
+li, .logo, .book{
+  display: inline-block;
+  padding-right: 25px;
+  float: left;
+}
+
+.book{
+  float: right;
+}
+
+.videoImg{
+  float: right;
+  width: 50%;
+  padding: 2%;
+}
+
+.imgColumn{
+float:left;
+}
+
+.text, nav, .contentWrapper{
+  width: 100%;
+  text-align: center;
+}
+
+.title .contentWrapper{
+  text-align:left;
+}
+
+.video .text{
+  float: left;
+  width: 90%;
+}
+
+/*
+  ========================================
+  MINI LAYOUT
+  ========================================
+*/
+.serviceDescription{
+  width: 33.33%;
+  min-width: 200px;
+  padding: 2% 5%;
+  float: left;
+  text-align: center;
+}
+
+.lookbook .allImages{
+  padding-left: 7%;
+}
+.stylistSection{
+  width: 100%;
+  text-align: center;
+  contain: content;
+}
+
+.stylistImg{
+  width: 370px;
+  height: 480px;
+}
+
+.stylistImgWrapper{
+  float: left;
+  height: 600px;
+  padding: 1%;
+  contain: content;
+  text-align: center;
+}
+
+.stylistSocialMedia{
+  width: 90%;
+  height: 480px;
+  position: relative;
+  text-align: center;
+  padding: 60% 0 30% 0;
+  right: -20px;
+  opacity: 0;
+  top: -462px;
+  transition: opacity 0.5s;
+}
+
+.stylistText{
+  position: relative;
+  text-align: center;
+  top: -462px;
+}
+
+.logo, nav, .book{
+  position: relative;
+  top: -10px;
+
+}
+
+ul{
+  text-align: center;
+  padding-left: 15%;
+}
+
+
+.aboutUs, .contact{
+  float:left;
+  width: 400px;
+  text-align: left;
+}
+
+.contact{
+  float: right;
+}
+
+.copyright{
+  clear: both;
+  width: 100%;
+  padding-top: 2%;
+  border-top: 1px solid white;
+  text-align: center;
+}
+.allImages, .imgColumn{
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  contain: content;
+}
+.imgColumn, .stylistImgWrapper{
+  width: 33%;
+  float: left;
+}
+
+
+
+/*
+========================================
+SPECIFIC ITEMS
+========================================
+*/
+.line{
+font-size: 50px;
+}
+
+ion-icon {
+--ionicon-stroke-width: 40px;
+}
+
+.threeLines{
+color: white;
+float: right;
+font-size: 30px;
+top: 0px;
+}
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+
+
+a:link, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+.stylistSocialMedia:hover{
+  opacity: 1;
+  background: rgba(0,0,0, .3);
+  transform: translateY(-20px);
+  transition: 0.5s;
+}
+
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media all and (min-width: 1251px) and (max-width: 3000px){
+  .tablet, .mobile{
+    display: none;
+  }
+}
+
+@media (max-width: 1350px){
+  .imgColumn, .stylistImgWrapper{
+    width: 50%;
+  }
+  .imgColumn:last-child, .stylistImgWrapper:last-child{
+    display: none;
+  }
+
+  .stylistSocialMedia{
+  width: 370px;
+  padding: 0 5%;
+  height: 480px;
+  position: relative;
+  text-align: center;
+  padding: 60% 0 30% 0;
+  opacity: 0;
+  right: -30px;
+  top: -462px;
+  transition: opacity 0.5s;
+  }
+}
+@media all and (max-width: 1250px){
+  ul, .book, .laptop{
+    display: none;
+  }
+  header{
+    background: black;
+    color: white;
+    padding: 5% 15%;
+    margin: 0 auto;
+  }
+  header ion-icon{
+    display: static;
+  }
+  .imgSix{
+    height: 360px;
+  }
+
+  .videoImgWrapper, .video .textMain{
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    contain: content;
+  }
+
+  .videoImgWrapper{
+    padding: 0 15%;
+  }
+  .videoImg{
+    width: 500px;
+  }
+ .stylistImgWrapper{
+    width: 100%;
+  }
+  .stylistSocialMedia{
+    width: 370px;
+    height: 480px;
+    position: relative;
+    text-align: center;
+    padding: 30% 0 20% 0;
+    opacity: 0;
+    right: -230px;
+    top: -462px;
+    transition: opacity 0.5s;
+  }
+}
+@media all and (max-width: 1100px){
+  .stylistImgWrapper, .stylistImgWrapper:last-child, .imgColumn{
+    padding: 0 25%;
+  }
+  .videoImgWrapper{
+    padding: 0 15%;
+  }
+  .imgColumn{
+    padding: 0;
+    width: 100%;
+  }
+  .imgRectangle, .imgSquare{
+    height: 360px;
+    float: none;
+    margin: 0 auto;
+  }
+  .stylistSocialMedia{
+    right:0px;
+    padding: 90% 0 30% 0;
+  }
+}
